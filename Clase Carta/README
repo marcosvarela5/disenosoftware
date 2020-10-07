@@ -1,7 +1,10 @@
 Esta clase inmutable crea objetos de tipo carta de una baraja inglesa con el objetivo de aprender la programación orientada a objetos.
 
-El funcionamiento del programa todavía no atiende a restricciones de cada juego, y todavía no hay restricciones de la propia baraja con respecto a sus atributos. (p. ej. permite la carta 
+El funcionamiento del programa todavía no atiende a restricciones de la propia baraja con respecto a sus atributos. (p. ej. permite la carta 
 "15 de corazones negro", una carta que no existe).
 
 
+This immutable class creates objects of type "Card" of an english deck of cards to improve my object oriented programming skills and learning. 
 
+The operation of the program still does not attend to restrictions of the deck itself and its attributes. (for ex. allows the letter
+"blakc 15 of hearts", a card that does not exist).
