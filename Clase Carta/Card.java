@@ -2,31 +2,25 @@ package t2;
 
 public class Card {
 
-    // Estado - Atributos
+    // Attributes - State
     private final Num num;
     private final Color color;
     private final Suit suit;
 
-    /* Los métodos modificadores no se utilizan porque queremos construir una clase inmutable,
-    ya que el juego no tendría sentido si las cartas pudiesen cambiar sus atributos durante el juego
-     */
+    //  Setters aren't needed since we want our class to be immutable
 
     /*public void setNum(int v) {valor = v;}
     public void setColor(String c) {color = c;}
     public void setSuit(String p) {palo = p;}*/
 
-    // Métodos de acceso
+    // Access methods
 
  public Num getNum(){return num;}
  public Suit getSuit(){return suit;}
  public Color getColor(){return color;}
 
-    public void showCard() {
-        System.out.println("\nYour card is the " + getColor()+ " " + getNum() + " of " + getSuit() + "\n");
-    }
 
-
-    // Constructor
+    // Builder
     public Card(Num num, Suit suit, Color color) {
 
         this.num = num;
@@ -34,6 +28,7 @@ public class Card {
         this.suit = suit;
     }
 
+    // Equals method - Prove that two cards are equal or identical
     public boolean equals(Object obj){
 
         if(obj == null){return false;}
@@ -57,7 +52,6 @@ public class Card {
     }
 
     @Override
-
     public String toString(){
         return "[" + color + " " + num.toString() + " of " + suit +"]";
     }
@@ -114,6 +108,8 @@ public class Card {
         }
         else
             System.out.println("C1 and C3 are not equal");
+
+        // Printer
 
         System.out.println("\nc1.hashCode() = " + c1.hashCode());
         System.out.println("c2.hashCode() = " + c2.hashCode());
